@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Awal Kuromi</title>
+    <style>
+        body {
+            /* Mengatur gambar Kuromi sebagai background */
+            background-image: url('Kuromi_render.png');
+            
+            /* Agar gambar menutupi seluruh area viewport */
+            background-size: cover;
+            
+            /* Mengatur posisi gambar di tengah */
+            background-position: center;
+            
+            /* Mencegah gambar berulang */
+            background-repeat: no-repeat;
+            
+            /* Tinggi minimal 100% dari viewport agar background terlihat penuh */
+            min-height: 100vh;
+            
+            /* Gaya teks dan tata letak */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff; /* Warna teks putih agar kontras dengan Kuromi */
+            
+            /* Menambahkan sedikit overlay gelap agar tombol lebih terlihat */
+            background-color: rgba(0, 0, 0, 0.4); 
+            background-blend-mode: darken;
+        }
+
+        h1 {
+            color: #ff69b4; /* Warna pink Kuromi */
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .button-container {
+            margin-top: 50px;
+        }
+
+        .play-button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #000; /* Warna hitam Kuromi */
+            border: 3px solid #ff69b4; /* Garis tepi pink */
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none; /* Hilangkan garis bawah link */
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .play-button:hover {
+            background-color: #333;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Selamat Datang di Dunia Kuromi!</h1>
+    <h1>For Naya belom mandi:v</h1>
+    <div class="button-container">
+        <a href="lagu.html" class="play-button">Putar Lagu Sekarang 🎶</a>
+    </div>
+</body>
+</html>
