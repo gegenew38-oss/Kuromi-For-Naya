@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Instagram</title>
+    <style>
+        body {
+            /* --- BACKGROUND GAMBAR KUROMI (TETAP) --- */
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+            /* Menambahkan overlay agar konten lebih terbaca */
+            background-color: rgba(0, 0, 0, 0); 
+            background-blend-mode: darken;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        
+        h1 {
+            color: #ffffff; 
+            text-shadow: 4px 2px 4px #ffffff;
+        }
+
+        .insta-container {
+            /* Mengubah nama class dan styling untuk pop-up Instagram */
+            background-color: rgba(0, 0, 0, 0.53); 
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px #ffffff; 
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+        }
+        
+        /* Container baru untuk menampung logo dan memastikannya di tengah */
+        .logo-wrapper {
+            /* Mengatur display flex agar konten di dalamnya (logo) bisa diatur posisinya */
+            display: flex;
+            justify-content: center; /* MEMASTIKAN LOGO BERADA TEPAT DI TENGAH HORIZONTAL */
+            margin: 1px 0; /* Memberi jarak atas dan bawah */
+        }
+
+        .insta-logo {
+            width: 90px; /* Ukuran logo yang disarankan agar tidak terlalu kecil */
+            height: 90px; /* Ukuran logo yang disarankan agar tidak terlalu kecil */
+            border-radius: 20px; /* Sedikit membulatkan sudut logo */
+            box-shadow: 0 0 20px rgb(255, 255, 255); /* Shadow pink lembut */
+            /* Efek transisi pada logo saat di-hover */
+            transition: transform 0.3s;
+        }
+
+        .insta-logo:hover {
+            transform: scale(1.1); /* Logo sedikit membesar saat di-hover */
+        }
+        
+        .username {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ffffff;
+            margin: 1px 0;
+        }
+        
+        /* Gaya tombol kembali */
+        .back-button {
+            color: #000000;
+            margin-top: 20px;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid #ffffff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="insta-container">
+        <h1>Mampir yah ke instagram aku!</h1>
+        
+        <p style="margin-bottom: 1px;">Mau follow tidaa..</p>
+        <p style="margin-top: 1px;">kalau tidaa yaasudaahhh😔</p>
+        
+        <div class="logo-wrapper">
+             <a href="https://www.instagram.com/pawasnew/" target="_blank">
+                <img src="logo ig.png"  class="insta-logo">
+            </a>
+        </div>
+        <p class="username">@pawasnew</p>
+        
+        <p style="font-style: italic; font-size: 0.9em; margin-top: 20px;">
+            *Klik logo di atas untuk langsung menuju profil*
+        </p>
+        <p style="font-style: italic; font-size: 0.9em; margin-top: 10px;">
+            *Plis Follow*
+        </p>
+    </div>
+    <a href="index.html" class="back-button">Kembali ke Halaman Utama</a>
+</body>
+</html>
